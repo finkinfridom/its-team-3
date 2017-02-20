@@ -1,0 +1,21 @@
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.exe.config
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.exe
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.Form1.resources
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.Properties.Resources.resources
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.csproj.GenerateResource.Cache
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.exe
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\PDF esercitazioni\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.exe.config
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.exe
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.exe
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.Form1.resources
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.Properties.Resources.resources
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.csproj.GenerateResource.Cache
+C:\Users\Utente\Desktop\ITS\.NET C#\prenotazioneAule\prenotazioneAule\bin\Debug\prenotazioneAule.exe.config
+C:\Users\Utente\Desktop\ITS\.NET C#\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\prenotazioneAule\prenotazioneAule\obj\Debug\prenotazioneAule.pdb
