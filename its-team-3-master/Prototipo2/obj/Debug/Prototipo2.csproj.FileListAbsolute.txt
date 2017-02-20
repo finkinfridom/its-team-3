@@ -1,0 +1,40 @@
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\bin\Debug\Prototipo2.exe.config
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\bin\Debug\Prototipo2.exe
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\bin\Debug\Prototipo2.pdb
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.csprojResolveAssemblyReference.cache
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Form1.resources
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.login.resources
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Properties.Resources.resources
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.csproj.GenerateResource.Cache
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.exe
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.pdb
+C:\Users\tony\Desktop\Progetti c#\WEb app\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Dopolog.resources
+J:\Prototipo2\Prototipo2\bin\Debug\Prototipo2.exe.config
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.exe
+J:\Prototipo2\Prototipo2\bin\Debug\Prototipo2.exe
+J:\Prototipo2\Prototipo2\bin\Debug\Prototipo2.pdb
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.csprojResolveAssemblyReference.cache
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Dopolog.resources
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Form1.resources
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.login.resources
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.Properties.Resources.resources
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.csproj.GenerateResource.Cache
+J:\Prototipo2\Prototipo2\obj\Debug\Prototipo2.pdb
+J:\Prototipo2\Prototipo2\bin\Debug\Database5.mdf
+J:\Prototipo2\Prototipo2\bin\Debug\Database5_log.ldf
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\bin\Debug\Prototipo2.exe.config
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.exe
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.pdb
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\bin\Debug\Database5.mdf
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\bin\Debug\Database5_log.ldf
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\bin\Debug\Prototipo2.exe
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\bin\Debug\Prototipo2.pdb
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.Dopolog.resources
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.Form1.resources
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.login.resources
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.Properties.Resources.resources
+C:\Users\Utente\Desktop\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.csproj.GenerateResource.Cache
+C:\Users\Utente\Desktop\ITS\.NET C#\its-team-3-master\Prototipo2\bin\Debug\Prototipo2.exe.config
+C:\Users\Utente\Desktop\ITS\.NET C#\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.exe
+C:\Users\Utente\Desktop\ITS\.NET C#\its-team-3-master\Prototipo2\obj\Debug\Prototipo2.pdb
