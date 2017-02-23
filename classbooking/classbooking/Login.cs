@@ -31,9 +31,9 @@ namespace classbooking
 
         private void _login_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Utente\Desktop\ITS\.NET C#\its-team-3-master\Database\tony.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
 
-            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Table] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
+            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
             DataTable dt = new DataTable();
 
             lgl.Fill(dt);

@@ -26,8 +26,8 @@ namespace classbooking
         {
             if (insertPassword.TextLength > 4)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Utente\Desktop\ITS\.NET C#\its-team-3-master\Database\tony.mdf;Integrated Security=True;Connect Timeout=30");
-                string str = "insert into [Table] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
+                string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
                 con.Open();
                 SqlCommand cmd = new SqlCommand(str, con);
                 cmd.ExecuteNonQuery();
