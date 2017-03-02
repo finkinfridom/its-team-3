@@ -11,3 +11,6 @@ C:\Users\Utente\Desktop\ITS\.NET C#\classbooking\classbooking\obj\Debug\classboo
 C:\Users\Utente\Desktop\ITS\.NET C#\classbooking\classbooking\obj\Debug\classbooking.pdb
 C:\Users\Utente\Desktop\ITS\.NET C#\classbooking\classbooking\bin\Debug\basedati.mdf
 C:\Users\Utente\Desktop\ITS\.NET C#\classbooking\classbooking\bin\Debug\basedati_log.ldf
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe.config
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.exe
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.pdb
