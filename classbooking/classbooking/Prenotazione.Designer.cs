@@ -53,6 +53,7 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Aula10
@@ -178,7 +179,7 @@
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(165, 307);
+            this.checkBox12.Location = new System.Drawing.Point(165, 329);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(86, 17);
             this.checkBox12.TabIndex = 37;
@@ -188,7 +189,7 @@
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(165, 284);
+            this.checkBox11.Location = new System.Drawing.Point(165, 306);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(86, 17);
             this.checkBox11.TabIndex = 36;
@@ -198,7 +199,7 @@
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(165, 261);
+            this.checkBox10.Location = new System.Drawing.Point(165, 283);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(86, 17);
             this.checkBox10.TabIndex = 35;
@@ -208,7 +209,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(165, 238);
+            this.checkBox9.Location = new System.Drawing.Point(165, 260);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(80, 17);
             this.checkBox9.TabIndex = 34;
@@ -218,7 +219,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(165, 215);
+            this.checkBox8.Location = new System.Drawing.Point(165, 237);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(80, 17);
             this.checkBox8.TabIndex = 33;
@@ -228,7 +229,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(165, 192);
+            this.checkBox7.Location = new System.Drawing.Point(165, 214);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(80, 17);
             this.checkBox7.TabIndex = 32;
@@ -238,7 +239,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(18, 307);
+            this.checkBox6.Location = new System.Drawing.Point(18, 329);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(80, 17);
             this.checkBox6.TabIndex = 31;
@@ -248,7 +249,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(18, 284);
+            this.checkBox5.Location = new System.Drawing.Point(18, 306);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(80, 17);
             this.checkBox5.TabIndex = 30;
@@ -258,7 +259,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(18, 261);
+            this.checkBox4.Location = new System.Drawing.Point(18, 283);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(80, 17);
             this.checkBox4.TabIndex = 29;
@@ -268,7 +269,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(18, 238);
+            this.checkBox3.Location = new System.Drawing.Point(18, 260);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(80, 17);
             this.checkBox3.TabIndex = 28;
@@ -278,7 +279,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(18, 215);
+            this.checkBox2.Location = new System.Drawing.Point(18, 237);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(80, 17);
             this.checkBox2.TabIndex = 27;
@@ -288,7 +289,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(18, 192);
+            this.checkBox1.Location = new System.Drawing.Point(18, 214);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(80, 17);
             this.checkBox1.TabIndex = 26;
@@ -297,16 +298,26 @@
             // 
             // calendario
             // 
-            this.calendario.Location = new System.Drawing.Point(18, 18);
+            this.calendario.Location = new System.Drawing.Point(18, 40);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 25;
             this.calendario.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "label1";
             // 
             // Prenotazione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 403);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Aula10);
             this.Controls.Add(this.Aula9);
             this.Controls.Add(this.Aula8);
@@ -333,6 +344,7 @@
             this.Controls.Add(this.calendario);
             this.Name = "Prenotazione";
             this.Text = "Prenotazione";
+            this.Load += new System.EventHandler(this.Prenotazione_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,5 +376,6 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.MonthCalendar calendario;
+        private System.Windows.Forms.Label label1;
     }
 }

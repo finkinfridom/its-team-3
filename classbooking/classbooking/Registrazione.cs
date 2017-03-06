@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Configuration;
 
 
 namespace classbooking
@@ -26,12 +27,25 @@ namespace classbooking
         {
             if (insertPassword.TextLength > 4)
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
-                string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
-                con.Open();
-                SqlCommand cmd = new SqlCommand(str, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
+                try
+                {
+                    string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(str, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception)
+                {
+                    conn.Open();
+                    throw;
+                }
+
+                // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
+                //conn.Open();
+                
+                conn.Close();
                 MessageBox.Show("Registrazione riuscita");
                 Login lg = new Login();
                 this.Hide();

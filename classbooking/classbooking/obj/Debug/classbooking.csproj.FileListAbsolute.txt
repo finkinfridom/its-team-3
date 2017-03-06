@@ -14,3 +14,13 @@ C:\Users\Utente\Desktop\ITS\.NET C#\classbooking\classbooking\bin\Debug\basedati
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe.config
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.exe
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.pdb
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\basedati.mdf
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\basedati_log.ldf
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.pdb
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Login.resources
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Prenotazione.resources
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Properties.Resources.resources
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione.resources
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csproj.GenerateResource.Cache
