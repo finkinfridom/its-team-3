@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-using System.Configuration;
-using System.Management;
 
 
 namespace classbooking
@@ -33,21 +31,7 @@ namespace classbooking
 
         private void _login_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-
-            //SqlConnection conn = new SqlConnection(@"connectionString['MyDBConnectionString']");
-
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
 
             SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
             DataTable dt = new DataTable();
@@ -56,14 +40,20 @@ namespace classbooking
             if (dt.Rows.Count == 1)
             {
                 this.Hide();
-                Prenotazione fd = new Prenotazione(insertEmail.Text);
+                Prenotazione fd = new Prenotazione();
                 fd.Show();
             }
             else
             {
                 MessageBox.Show("Inserire E-mail o Password corretta");
+                insertEmail.Clear();
                 insertPass.Clear();
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

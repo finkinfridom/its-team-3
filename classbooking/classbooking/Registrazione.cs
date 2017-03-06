@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
-using System.Configuration;
-
+using System.Security.Cryptography;
 
 namespace classbooking
 {
     public partial class Registrazione : Form
     {
+        
+
         public Registrazione()
         {
             InitializeComponent();
@@ -25,28 +18,19 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
+         
             if (insertPassword.TextLength > 4)
             {
-                SqlConnection conn = new SqlConnection();
-                conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
-                try
-                {
-                    string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(str, conn);
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception)
-                {
-                    conn.Open();
-                    throw;
-                }
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
+                string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" +insertPassword.Text+ "')";
+                con.Open();
+                SqlCommand cmd = new SqlCommand(str, con);
+                cmd.ExecuteNonQuery();
+               
 
-                // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
-                //conn.Open();
-                
-                conn.Close();
+                    con.Close();
                 MessageBox.Show("Registrazione riuscita");
+                
                 Login lg = new Login();
                 this.Hide();
                 lg.Show();
@@ -56,6 +40,17 @@ namespace classbooking
             {
                 MessageBox.Show("Password inserita inferiore ad 5 caratteri");
             }
+        }
+
+        private void Registrazione_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void insertPassword_TextChanged(object sender, EventArgs e)
+        {
+           
+
         }
     }
 }   
