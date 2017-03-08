@@ -50,3 +50,6 @@ C:\Users\Utente\Desktop\its-team-3\classbooking\classbooking\bin\Debug\basedati.
 C:\Users\Utente\Desktop\its-team-3\classbooking\classbooking\bin\Debug\basedati_log.ldf
 C:\Users\Utente\Desktop\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe
 C:\Users\Utente\Desktop\its-team-3\classbooking\classbooking\bin\Debug\classbooking.pdb
+C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe.config
+C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.exe
+C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.pdb
