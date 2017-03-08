@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
 using System.Management;
+using System.Security.Cryptography;
 
 
 namespace classbooking
@@ -20,6 +21,17 @@ namespace classbooking
         public Login()
         {
             InitializeComponent();
+        }
+
+        static string crypto(string value)
+        {
+            using (SHA1CryptoServiceProvider password = new SHA1CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = password.ComputeHash(utf8.GetBytes(value));
+                return Convert.ToBase64String(data);
+            }
+
         }
 
         private void _registrazione_Click(object sender, EventArgs e)
@@ -49,6 +61,9 @@ namespace classbooking
 
             //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
 
+            string mail = insertEmail.Text;
+            insertPass.Text = crypto(insertPass.Text);
+            insertEmail.Text = crypto(insertEmail.Text);
             SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
             DataTable dt = new DataTable();
 

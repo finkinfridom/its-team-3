@@ -21,6 +21,17 @@ namespace classbooking
             InitializeComponent();
         }
 
+        static string crypto(string value)
+        {
+            using (SHA1CryptoServiceProvider password = new SHA1CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = password.ComputeHash(utf8.GetBytes(value));
+                return Convert.ToBase64String(data);
+            }
+
+        }
+
         private void esci_Click(object sender, EventArgs e) { Close(); }
 
         private void invia_Click(object sender, EventArgs e)
@@ -31,6 +42,9 @@ namespace classbooking
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
                 try
                 {
+                    string mail = insertEmail.Text;
+                    insertPassword.Text = crypto(insertPassword.Text);
+                    insertEmail.Text = crypto(insertEmail.Text);
                     string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(str, conn);
