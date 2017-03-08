@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
-
+using System.Security.Cryptography;
 
 namespace classbooking
 {
@@ -44,7 +44,7 @@ namespace classbooking
 
                 // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
                 //conn.Open();
-                
+
                 conn.Close();
                 MessageBox.Show("Registrazione riuscita");
                 Login lg = new Login();
@@ -57,5 +57,8 @@ namespace classbooking
                 MessageBox.Show("Password inserita inferiore ad 5 caratteri");
             }
         }
+
+        private void Registrazione_Load(object sender, EventArgs e) { }
+        private void insertPassword_TextChanged(object sender, EventArgs e) { }
     }
 }   

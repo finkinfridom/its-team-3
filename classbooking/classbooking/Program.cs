@@ -16,8 +16,7 @@ namespace classbooking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run( new Login());
-            Application.Run(new Prenotazione("tony"));
+            Application.Run(new Login());
         }
     }
 }
