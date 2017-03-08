@@ -36,9 +36,10 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
-            int verifica = insertEmail.Text.IndexOf("@");
+            int verificaChiocciola = insertEmail.Text.IndexOf("@");
+            int verificaPunto = insertEmail.Text.IndexOf(".");
 
-            if (insertPassword.TextLength > 4 && verifica != -1 )
+            if (insertPassword.TextLength > 4 && verificaChiocciola != -1 && verificaPunto != -1)
             {
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
@@ -68,7 +69,12 @@ namespace classbooking
                 lg.Show();
 
             }
-            else if(verifica==-1)
+            else if(verificaChiocciola == -1)
+            {
+                insertEmail.BackColor = Color.Red;
+                MessageBox.Show("Inserisci una e-mail valida");
+            }
+            else if (verificaPunto == -1)
             {
                 insertEmail.BackColor = Color.Red;
                 MessageBox.Show("Inserisci una e-mail valida");
