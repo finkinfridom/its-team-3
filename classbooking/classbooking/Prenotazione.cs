@@ -13,11 +13,11 @@ namespace classbooking
     public partial class Prenotazione : Form
     {
         Ricerca ric = new Ricerca();
-        private string email;
+        private string mail;
 
-        public Prenotazione(string email)
+        public Prenotazione(string mail)
         {
-            this.email = email;
+            this.mail = mail;
             InitializeComponent();
         }
 
@@ -49,7 +49,7 @@ namespace classbooking
 
         private void Prenotazione_Load(object sender, EventArgs e)
         {
-            label1.Text = email;
+            label1.Text = mail;
         }
 
         //private void Prenotazione_Load(object sender, EventArgs e) { }

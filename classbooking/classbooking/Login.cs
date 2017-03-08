@@ -18,9 +18,14 @@ namespace classbooking
 {
     public partial class Login : Form
     {
-        public Login()
+        private string email;
+        private string password;
+        public Login(string email,string password)
         {
             InitializeComponent();
+            this.email = email;
+            this.password = password;
+         
         }
 
         static string crypto(string value)
@@ -61,12 +66,13 @@ namespace classbooking
 
             //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
 
-            string mail = insertEmail.Text;
-            insertPass.Text = crypto(insertPass.Text);
-            insertEmail.Text = crypto(insertEmail.Text);
-            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
-            DataTable dt = new DataTable();
+          
+            password = crypto(insertPass.Text);
+            email = crypto(insertEmail.Text);
 
+            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + email + "'and password='" + password + "'", conn);
+            DataTable dt = new DataTable();
+            
             lgl.Fill(dt);
             if (dt.Rows.Count == 1)
             {

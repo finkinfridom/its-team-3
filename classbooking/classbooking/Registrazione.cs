@@ -36,16 +36,18 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
-            if (insertPassword.TextLength > 4)
+            int verifica = insertEmail.Text.IndexOf("@");
+
+            if (insertPassword.TextLength > 4 && verifica != -1 )
             {
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
                 try
                 {
                     string mail = insertEmail.Text;
-                    insertPassword.Text = crypto(insertPassword.Text);
-                    insertEmail.Text = crypto(insertEmail.Text);
-                    string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
+                    string password = crypto(insertPassword.Text);
+                    string email = crypto(insertEmail.Text);
+                    string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + email + "','" + password + "')";
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(str, conn);
                     cmd.ExecuteNonQuery();
@@ -58,18 +60,26 @@ namespace classbooking
 
                 // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
                 //conn.Open();
-
+             
                 conn.Close();
                 MessageBox.Show("Registrazione riuscita");
-                Login lg = new Login();
+                Login lg = new Login(insertEmail.Text,insertEmail.Text);
                 this.Hide();
                 lg.Show();
 
             }
-            else
+            else if(verifica==-1)
             {
+                insertEmail.BackColor = Color.Red;
+                MessageBox.Show("Inserisci una e-mail valida");
+            }
+            else if (insertPassword.TextLength < 5 )
+            {
+                insertPassword.BackColor = Color.Red;
                 MessageBox.Show("Password inserita inferiore ad 5 caratteri");
             }
+            insertEmail.BackColor = Color.White;
+            insertPassword.BackColor = Color.White;
         }
 
         private void Registrazione_Load(object sender, EventArgs e) { }
