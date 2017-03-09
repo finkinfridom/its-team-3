@@ -75,6 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>basedatiDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Crypto.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -21,17 +21,6 @@ namespace classbooking
             InitializeComponent();
         }
 
-        static string crypto(string value)
-        {
-            using (SHA1CryptoServiceProvider password = new SHA1CryptoServiceProvider())
-            {
-                UTF8Encoding utf8 = new UTF8Encoding();
-                byte[] data = password.ComputeHash(utf8.GetBytes(value));
-                return Convert.ToBase64String(data);
-            }
-
-        }
-
         private void esci_Click(object sender, EventArgs e) { Close(); }
 
         private void invia_Click(object sender, EventArgs e)
@@ -43,8 +32,8 @@ namespace classbooking
                 try
                 {
                     string mail = insertEmail.Text;
-                    string password = crypto(insertPassword.Text);
-                    string email = crypto(insertEmail.Text);
+                    string password = Crypto.crypto(insertPassword.Text);
+                    string email = Crypto.crypto(insertEmail.Text);
                     string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + email + "','" + password + "')";
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(str, conn);
@@ -57,7 +46,7 @@ namespace classbooking
     
                 conn.Close();
                 MessageBox.Show("Registrazione riuscita");
-                Login lg = new Login(insertEmail.Text,insertEmail.Text);
+                Login lg = new Login(/*insertEmail.Text,insertPassword.Text*/);
                 this.Hide();
                 lg.Show();
 
@@ -77,6 +66,6 @@ namespace classbooking
         }
 
         private void Registrazione_Load(object sender, EventArgs e) { }
-        private void insertPassword_TextChanged(object sender, EventArgs e) { }
+        private void insertPassword_TextChanged(object sender, EventArgs e) {  }
     }
 }   

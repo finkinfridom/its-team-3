@@ -20,23 +20,12 @@ namespace classbooking
     {
         private string email;
         private string password;
-        public Login(string email,string password)
+        public Login(/*string email,string password*/)
         {
             InitializeComponent();
-            this.email = email;
-            this.password = password;
+            //this.email = email;
+            //this.password = password;
          
-        }
-
-        static string crypto(string value)
-        {
-            using (SHA1CryptoServiceProvider password = new SHA1CryptoServiceProvider())
-            {
-                UTF8Encoding utf8 = new UTF8Encoding();
-                byte[] data = password.ComputeHash(utf8.GetBytes(value));
-                return Convert.ToBase64String(data);
-            }
-
         }
 
         private void _registrazione_Click(object sender, EventArgs e)
@@ -61,14 +50,8 @@ namespace classbooking
                 throw;
             }
 
-
-            //SqlConnection conn = new SqlConnection(@"connectionString['MyDBConnectionString']");
-
-            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
-
-          
-            password = crypto(insertPass.Text);
-            email = crypto(insertEmail.Text);
+            password = Crypto.crypto(insertPass.Text);
+            email = Crypto.crypto(insertEmail.Text);
 
             SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + email + "'and password='" + password + "'", conn);
             DataTable dt = new DataTable();
