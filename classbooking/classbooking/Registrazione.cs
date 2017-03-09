@@ -36,10 +36,7 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
-            int verificaChiocciola = insertEmail.Text.IndexOf("@");
-            int verificaPunto = insertEmail.Text.IndexOf(".");
-
-            if (insertPassword.TextLength > 4 && verificaChiocciola != -1 && verificaPunto != -1)
+            if (Verifiche.verificaEmail(insertEmail.Text) && Verifiche.verificaPassword(insertPassword.Text))
             {
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
@@ -54,14 +51,10 @@ namespace classbooking
                     cmd.ExecuteNonQuery();
                 }
                 catch (Exception)
-                {
-                    conn.Open();
+                {   
                     throw;
                 }
-
-                // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
-                //conn.Open();
-             
+    
                 conn.Close();
                 MessageBox.Show("Registrazione riuscita");
                 Login lg = new Login(insertEmail.Text,insertEmail.Text);
@@ -69,20 +62,15 @@ namespace classbooking
                 lg.Show();
 
             }
-            else if(verificaChiocciola == -1)
+            else if(!Verifiche.verificaEmail(insertEmail.Text))
             {
                 insertEmail.BackColor = Color.Red;
                 MessageBox.Show("Inserisci una e-mail valida");
             }
-            else if (verificaPunto == -1)
-            {
-                insertEmail.BackColor = Color.Red;
-                MessageBox.Show("Inserisci una e-mail valida");
-            }
-            else if (insertPassword.TextLength < 5 )
+            else if (!Verifiche.verificaPassword(insertPassword.Text))
             {
                 insertPassword.BackColor = Color.Red;
-                MessageBox.Show("Password inserita inferiore ad 5 caratteri");
+                MessageBox.Show("Password non valida. Deve contenere almeno una lettera un numero e un simbolo.");
             }
             insertEmail.BackColor = Color.White;
             insertPassword.BackColor = Color.White;
