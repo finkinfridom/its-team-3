@@ -12,6 +12,8 @@ namespace classbooking
 {
     public partial class Aula : Form
     {
+        bool[] orari = new Boolean[12];
+
         public Aula()
         {
             InitializeComponent();
@@ -19,7 +21,11 @@ namespace classbooking
         
         private void prova()
         {
-            //checkedListBox1.ch
+            //checkedListBox1.
+        }
+        private void prova2()
+        {
+            
         }
         
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
