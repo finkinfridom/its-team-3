@@ -11,7 +11,6 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
 using System.Management;
-using System.Security.Cryptography;
 
 
 namespace classbooking

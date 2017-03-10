@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
-using System.Security.Cryptography;
 
 namespace classbooking
 {
@@ -29,6 +28,7 @@ namespace classbooking
             {
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
+
                 try
                 {
                     string mail = insertEmail.Text;
@@ -38,17 +38,19 @@ namespace classbooking
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(str, conn);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registrazione riuscita");
                 }
-                catch (Exception)
-                {   
-                    throw;
+                catch (SqlException)
+                {
+                    conn.Close();
+
+                    MessageBox.Show("E-mail già registrata", "ERROR", MessageBoxButtons.OK);
+                    
                 }
-    
                 conn.Close();
-                MessageBox.Show("Registrazione riuscita");
-                Login lg = new Login(/*insertEmail.Text,insertPassword.Text*/);
-                this.Hide();
-                lg.Show();
+                Login login = new Login();
+                this.Close();
+                login.Show();
 
             }
             else if(!Verifiche.verificaEmail(insertEmail.Text))

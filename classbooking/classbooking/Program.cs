@@ -8,8 +8,8 @@ namespace classbooking
 {
     static class Program
     {
-        private static string email;
-        private static string password;
+        //private static string email;
+        //private static string password;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

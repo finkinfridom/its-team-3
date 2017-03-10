@@ -61,7 +61,7 @@
             this.Aula10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula10.BackColor = System.Drawing.Color.Transparent;
             this.Aula10.Image = ((System.Drawing.Image)(resources.GetObject("Aula10.Image")));
-            this.Aula10.Location = new System.Drawing.Point(440, 310);
+            this.Aula10.Location = new System.Drawing.Point(440, 314);
             this.Aula10.Name = "Aula10";
             this.Aula10.Size = new System.Drawing.Size(67, 67);
             this.Aula10.TabIndex = 48;
@@ -73,7 +73,7 @@
             this.Aula9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula9.BackColor = System.Drawing.Color.Transparent;
             this.Aula9.Image = ((System.Drawing.Image)(resources.GetObject("Aula9.Image")));
-            this.Aula9.Location = new System.Drawing.Point(440, 237);
+            this.Aula9.Location = new System.Drawing.Point(440, 241);
             this.Aula9.Name = "Aula9";
             this.Aula9.Size = new System.Drawing.Size(67, 67);
             this.Aula9.TabIndex = 47;
@@ -85,7 +85,7 @@
             this.Aula8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula8.BackColor = System.Drawing.Color.Transparent;
             this.Aula8.Image = ((System.Drawing.Image)(resources.GetObject("Aula8.Image")));
-            this.Aula8.Location = new System.Drawing.Point(440, 164);
+            this.Aula8.Location = new System.Drawing.Point(440, 168);
             this.Aula8.Name = "Aula8";
             this.Aula8.Size = new System.Drawing.Size(67, 67);
             this.Aula8.TabIndex = 46;
@@ -97,7 +97,7 @@
             this.Aula7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula7.BackColor = System.Drawing.Color.Transparent;
             this.Aula7.Image = ((System.Drawing.Image)(resources.GetObject("Aula7.Image")));
-            this.Aula7.Location = new System.Drawing.Point(440, 91);
+            this.Aula7.Location = new System.Drawing.Point(440, 95);
             this.Aula7.Name = "Aula7";
             this.Aula7.Size = new System.Drawing.Size(67, 67);
             this.Aula7.TabIndex = 45;
@@ -109,7 +109,7 @@
             this.Adobe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Adobe.BackColor = System.Drawing.Color.Transparent;
             this.Adobe.Image = ((System.Drawing.Image)(resources.GetObject("Adobe.Image")));
-            this.Adobe.Location = new System.Drawing.Point(440, 18);
+            this.Adobe.Location = new System.Drawing.Point(440, 22);
             this.Adobe.Name = "Adobe";
             this.Adobe.Size = new System.Drawing.Size(67, 67);
             this.Adobe.TabIndex = 44;
@@ -121,7 +121,7 @@
             this.Aula5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula5.BackColor = System.Drawing.Color.Transparent;
             this.Aula5.Image = ((System.Drawing.Image)(resources.GetObject("Aula5.Image")));
-            this.Aula5.Location = new System.Drawing.Point(336, 310);
+            this.Aula5.Location = new System.Drawing.Point(336, 314);
             this.Aula5.Name = "Aula5";
             this.Aula5.Size = new System.Drawing.Size(67, 67);
             this.Aula5.TabIndex = 43;
@@ -133,7 +133,7 @@
             this.Aula4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula4.BackColor = System.Drawing.Color.Transparent;
             this.Aula4.Image = ((System.Drawing.Image)(resources.GetObject("Aula4.Image")));
-            this.Aula4.Location = new System.Drawing.Point(336, 237);
+            this.Aula4.Location = new System.Drawing.Point(336, 241);
             this.Aula4.Name = "Aula4";
             this.Aula4.Size = new System.Drawing.Size(67, 67);
             this.Aula4.TabIndex = 42;
@@ -145,7 +145,7 @@
             this.Aula3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula3.BackColor = System.Drawing.Color.Transparent;
             this.Aula3.Image = ((System.Drawing.Image)(resources.GetObject("Aula3.Image")));
-            this.Aula3.Location = new System.Drawing.Point(336, 164);
+            this.Aula3.Location = new System.Drawing.Point(336, 168);
             this.Aula3.Name = "Aula3";
             this.Aula3.Size = new System.Drawing.Size(67, 67);
             this.Aula3.TabIndex = 41;
@@ -157,7 +157,7 @@
             this.Aula2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula2.BackColor = System.Drawing.Color.Transparent;
             this.Aula2.Image = ((System.Drawing.Image)(resources.GetObject("Aula2.Image")));
-            this.Aula2.Location = new System.Drawing.Point(336, 91);
+            this.Aula2.Location = new System.Drawing.Point(336, 95);
             this.Aula2.Name = "Aula2";
             this.Aula2.Size = new System.Drawing.Size(67, 67);
             this.Aula2.TabIndex = 40;
@@ -169,7 +169,7 @@
             this.Aula1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula1.BackColor = System.Drawing.Color.Transparent;
             this.Aula1.Image = ((System.Drawing.Image)(resources.GetObject("Aula1.Image")));
-            this.Aula1.Location = new System.Drawing.Point(336, 18);
+            this.Aula1.Location = new System.Drawing.Point(336, 22);
             this.Aula1.Name = "Aula1";
             this.Aula1.Size = new System.Drawing.Size(67, 67);
             this.Aula1.TabIndex = 39;
@@ -181,7 +181,7 @@
             this.Cerca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cerca.BackColor = System.Drawing.Color.Snow;
             this.Cerca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cerca.Location = new System.Drawing.Point(90, 362);
+            this.Cerca.Location = new System.Drawing.Point(90, 366);
             this.Cerca.Name = "Cerca";
             this.Cerca.Size = new System.Drawing.Size(75, 23);
             this.Cerca.TabIndex = 38;
@@ -196,7 +196,7 @@
             this.checkBox12.BackColor = System.Drawing.Color.Transparent;
             this.checkBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox12.ForeColor = System.Drawing.Color.White;
-            this.checkBox12.Location = new System.Drawing.Point(165, 329);
+            this.checkBox12.Location = new System.Drawing.Point(165, 333);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(83, 20);
             this.checkBox12.TabIndex = 37;
@@ -210,7 +210,7 @@
             this.checkBox11.BackColor = System.Drawing.Color.Transparent;
             this.checkBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox11.ForeColor = System.Drawing.Color.White;
-            this.checkBox11.Location = new System.Drawing.Point(165, 306);
+            this.checkBox11.Location = new System.Drawing.Point(165, 310);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(78, 20);
             this.checkBox11.TabIndex = 36;
@@ -224,7 +224,7 @@
             this.checkBox10.BackColor = System.Drawing.Color.Transparent;
             this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox10.ForeColor = System.Drawing.Color.White;
-            this.checkBox10.Location = new System.Drawing.Point(165, 283);
+            this.checkBox10.Location = new System.Drawing.Point(165, 287);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(81, 20);
             this.checkBox10.TabIndex = 35;
@@ -239,7 +239,7 @@
             this.checkBox9.BackColor = System.Drawing.Color.Transparent;
             this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox9.ForeColor = System.Drawing.Color.White;
-            this.checkBox9.Location = new System.Drawing.Point(165, 260);
+            this.checkBox9.Location = new System.Drawing.Point(165, 264);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(125, 20);
             this.checkBox9.TabIndex = 34;
@@ -253,7 +253,7 @@
             this.checkBox8.BackColor = System.Drawing.Color.Transparent;
             this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox8.ForeColor = System.Drawing.Color.White;
-            this.checkBox8.Location = new System.Drawing.Point(165, 237);
+            this.checkBox8.Location = new System.Drawing.Point(165, 241);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(81, 20);
             this.checkBox8.TabIndex = 33;
@@ -267,7 +267,7 @@
             this.checkBox7.BackColor = System.Drawing.Color.Transparent;
             this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.ForeColor = System.Drawing.Color.White;
-            this.checkBox7.Location = new System.Drawing.Point(165, 214);
+            this.checkBox7.Location = new System.Drawing.Point(165, 218);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(121, 20);
             this.checkBox7.TabIndex = 32;
@@ -282,7 +282,7 @@
             this.checkBox6.BackColor = System.Drawing.Color.Transparent;
             this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.ForeColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(18, 329);
+            this.checkBox6.Location = new System.Drawing.Point(18, 333);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(79, 20);
             this.checkBox6.TabIndex = 31;
@@ -296,7 +296,7 @@
             this.checkBox5.BackColor = System.Drawing.Color.Transparent;
             this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(18, 306);
+            this.checkBox5.Location = new System.Drawing.Point(18, 310);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(113, 20);
             this.checkBox5.TabIndex = 30;
@@ -310,7 +310,7 @@
             this.checkBox4.BackColor = System.Drawing.Color.Transparent;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(18, 283);
+            this.checkBox4.Location = new System.Drawing.Point(18, 287);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(95, 20);
             this.checkBox4.TabIndex = 29;
@@ -324,7 +324,7 @@
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(18, 260);
+            this.checkBox3.Location = new System.Drawing.Point(18, 264);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(130, 20);
             this.checkBox3.TabIndex = 28;
@@ -338,7 +338,7 @@
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(18, 237);
+            this.checkBox2.Location = new System.Drawing.Point(18, 241);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(114, 20);
             this.checkBox2.TabIndex = 27;
@@ -352,7 +352,7 @@
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(18, 214);
+            this.checkBox1.Location = new System.Drawing.Point(18, 218);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(73, 20);
             this.checkBox1.TabIndex = 26;
@@ -364,7 +364,7 @@
             // 
             this.calendario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.calendario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.calendario.Location = new System.Drawing.Point(18, 40);
+            this.calendario.Location = new System.Drawing.Point(18, 44);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 25;
             this.calendario.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendario_DateChanged);
@@ -388,7 +388,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(534, 403);
+            this.ClientSize = new System.Drawing.Size(534, 411);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Aula10);
             this.Controls.Add(this.Aula9);

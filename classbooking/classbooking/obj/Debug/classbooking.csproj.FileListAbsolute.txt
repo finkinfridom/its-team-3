@@ -66,3 +66,4 @@ C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\clas
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Properties.Resources.resources
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione.resources
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csproj.GenerateResource.Cache
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Aula.resources
