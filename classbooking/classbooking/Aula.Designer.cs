@@ -33,6 +33,7 @@
             this.Indietro = new System.Windows.Forms.Button();
             this.Avanti = new System.Windows.Forms.Button();
             this.Logout = new System.Windows.Forms.Button();
+            this.CercaOrario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -89,11 +90,22 @@
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = true;
             // 
+            // CercaOrario
+            // 
+            this.CercaOrario.Location = new System.Drawing.Point(35, 227);
+            this.CercaOrario.Name = "CercaOrario";
+            this.CercaOrario.Size = new System.Drawing.Size(75, 23);
+            this.CercaOrario.TabIndex = 7;
+            this.CercaOrario.Text = "Cerca";
+            this.CercaOrario.UseVisualStyleBackColor = true;
+            this.CercaOrario.Click += new System.EventHandler(this.CercaOrario_Click);
+            // 
             // Aula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
+            this.Controls.Add(this.CercaOrario);
             this.Controls.Add(this.Logout);
             this.Controls.Add(this.Avanti);
             this.Controls.Add(this.Indietro);
@@ -112,5 +124,6 @@
         private System.Windows.Forms.Button Indietro;
         private System.Windows.Forms.Button Avanti;
         private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.Button CercaOrario;
     }
 }

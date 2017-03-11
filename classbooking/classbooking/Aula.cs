@@ -12,25 +12,26 @@ namespace classbooking
 {
     public partial class Aula : Form
     {
-        bool[] orari = new Boolean[12];
+        bool[] orari = new Boolean[8];
 
         public Aula()
         {
             InitializeComponent();
         }
-        
-        private void prova()
-        {
-            //checkedListBox1.
-        }
-        private void prova2()
-        {
-            
-        }
-        
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void CercaOrario_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                orari[i] = checkedListBox1.CheckOnClick;
+                MessageBox.Show(orari[1].ToString());
+            }
         }
+        
+
+        
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e){}
+
+        
     }
 }

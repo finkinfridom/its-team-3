@@ -19,41 +19,60 @@ namespace classbooking
 
         public void cerca()
         {
-
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
-            /* try
-             {
-                 conn.Open();
-             }
-             catch (Exception)
-             {
-                 throw;
-             }*/
-
             SqlCommand cmd = new SqlCommand();
             SqlDataReader reader;
             conn.Open();
+
+            bool flag = false;
+            string queryStringNomeProgramma = "SELECT nome FROM [Software] WHERE Id = ";
+            string queryStringListaProgrammi = "";
+            for (int i = 0; i < programmi.Length; i++)
+            {
+                if(programmi[i] == true)
+                {
+
+                    queryStringNomeProgramma = string.Concat(queryStringNomeProgramma, i);
+                    cmd.CommandText = queryStringNomeProgramma;
+                    reader = cmd.ExecuteReader();
+
+                    if (!flag)
+                    {
+                        queryStringListaProgrammi = string.Concat(queryStringListaProgrammi, reader.ToString());
+                        flag = true;
+                    }
+                    else
+                    {
+                        queryStringListaProgrammi = string.Concat(queryStringListaProgrammi, string.Concat("AND", reader.ToString()));
+                    }
+                    
+                    queryStringNomeProgramma.Remove(queryStringNomeProgramma.IndexOf(i.ToString()));
+                }
+            }
+
+            
+
+
 
             for (int i = 0; i < programmi.Length; i++)
             {
                 if (programmi[i] == true)
                 {
-                    cmd.CommandText = "select * from [Software] where Id='" + i + "'";
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Connection = conn;
-                    try
+                    cmd.CommandText = "select * from [Software] where Id='1'";
+
+                    //cmd.CommandType = CommandType.Text;
+                    //cmd.Connection = conn;
+                    
+                    /*try
                     {
                         reader = cmd.ExecuteReader();
+                        
                     }
                     catch (Exception)
                     {
-
-
-
-
-
-                    }
+                        throw;
+                    }*/
                 }
                 foreach (Boolean programmi in aule)
                 {
