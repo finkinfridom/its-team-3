@@ -9,15 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.Configuration;
+using System.Management;
 
 
 namespace classbooking
 {
     public partial class Login : Form
     {
-        public Login()
+        private string email;
+        private string password;
+        public Login(/*string email,string password*/)
         {
             InitializeComponent();
+            //this.email = email;
+            //this.password = password;
+         
         }
 
         private void _registrazione_Click(object sender, EventArgs e)
@@ -31,24 +38,37 @@ namespace classbooking
 
         private void _login_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
-            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + insertEmail.Text + "'and password='" + insertPass.Text + "'", conn);
+            password = Crypto.crypto(insertPass.Text);
+            email = Crypto.crypto(insertEmail.Text);
+
+            SqlDataAdapter lgl = new SqlDataAdapter("select * from [Utente] where email='" + email + "'and password='" + password + "'", conn);
             DataTable dt = new DataTable();
-
+            
             lgl.Fill(dt);
             if (dt.Rows.Count == 1)
             {
                 this.Hide();
-                //Dopolog fd = new Dopolog(dt.Rows[0][0].ToString());
-                //fd.Show();
+                Prenotazione fd = new Prenotazione(insertEmail.Text);
+                fd.Show();
             }
             else
             {
                 MessageBox.Show("Inserire E-mail o Password corretta");
-                insertEmail.Clear();
                 insertPass.Clear();
             }
         }
+
+        private void Login_Load(object sender, EventArgs e) { }
     }
 }

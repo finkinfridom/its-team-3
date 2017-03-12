@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-
+using System.Configuration;
 
 namespace classbooking
 {
@@ -24,24 +24,50 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
-            if (insertPassword.TextLength > 4)
+            if (Verifiche.verificaEmail(insertEmail.Text) && Verifiche.verificaPassword(insertPassword.Text))
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\DataBase\basedati.mdf;Integrated Security=True;Connect Timeout=30");
-                string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + insertEmail.Text + "','" + insertPassword.Text + "')";
-                con.Open();
-                SqlCommand cmd = new SqlCommand(str, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Registrazione riuscita");
-                Login lg = new Login();
-                this.Hide();
-                lg.Show();
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
+
+                try
+                {
+                    string mail = insertEmail.Text;
+                    string password = Crypto.crypto(insertPassword.Text);
+                    string email = Crypto.crypto(insertEmail.Text);
+                    string str = "insert into [Utente] (nome,cognome,email,password) values ('" + insertNome.Text + "','" + insertCognome.Text + "','" + email + "','" + password + "')";
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(str, conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Registrazione riuscita");
+                }
+                catch (SqlException)
+                {
+                    conn.Close();
+
+                    MessageBox.Show("E-mail già registrata", "ERROR", MessageBoxButtons.OK);
+                    
+                }
+                conn.Close();
+                Login login = new Login();
+                this.Close();
+                login.Show();
 
             }
-            else
+            else if(!Verifiche.verificaEmail(insertEmail.Text))
             {
-                MessageBox.Show("Password inserita inferiore ad 5 caratteri");
+                insertEmail.BackColor = Color.Red;
+                MessageBox.Show("Inserisci una e-mail valida");
             }
+            else if (!Verifiche.verificaPassword(insertPassword.Text))
+            {
+                insertPassword.BackColor = Color.Red;
+                MessageBox.Show("Password non valida. Deve contenere almeno una lettera un numero e un simbolo.");
+            }
+            insertEmail.BackColor = Color.White;
+            insertPassword.BackColor = Color.White;
         }
+
+        private void Registrazione_Load(object sender, EventArgs e) { }
+        private void insertPassword_TextChanged(object sender, EventArgs e) {  }
     }
 }   

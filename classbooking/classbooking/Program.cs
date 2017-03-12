@@ -8,6 +8,8 @@ namespace classbooking
 {
     static class Program
     {
+        //private static string email;
+        //private static string password;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,9 @@ namespace classbooking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            //Application.Run(new Login(/*email,password*/));
+            //Application.Run(new Aula());
+            Application.Run(new Prenotazione("test"));
         }
     }
 }
