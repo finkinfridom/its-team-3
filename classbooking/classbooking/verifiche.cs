@@ -11,7 +11,7 @@ namespace classbooking
         static public Boolean verificaEmail(string email)
         {
             int chiocciola = email.IndexOf('@');
-            int punto = email.IndexOf('.');
+            int punto = email.LastIndexOf('.');
             if (chiocciola < 0 || punto < chiocciola || email.Length-punto<2)
                 return false;
 
