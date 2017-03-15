@@ -62,7 +62,7 @@
             this.Aula10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula10.BackColor = System.Drawing.Color.Transparent;
             this.Aula10.Image = ((System.Drawing.Image)(resources.GetObject("Aula10.Image")));
-            this.Aula10.Location = new System.Drawing.Point(440, 314);
+            this.Aula10.Location = new System.Drawing.Point(440, 336);
             this.Aula10.Name = "Aula10";
             this.Aula10.Size = new System.Drawing.Size(67, 67);
             this.Aula10.TabIndex = 48;
@@ -75,7 +75,7 @@
             this.Aula9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula9.BackColor = System.Drawing.Color.Transparent;
             this.Aula9.Image = ((System.Drawing.Image)(resources.GetObject("Aula9.Image")));
-            this.Aula9.Location = new System.Drawing.Point(440, 241);
+            this.Aula9.Location = new System.Drawing.Point(440, 263);
             this.Aula9.Name = "Aula9";
             this.Aula9.Size = new System.Drawing.Size(67, 67);
             this.Aula9.TabIndex = 47;
@@ -88,7 +88,7 @@
             this.Aula8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula8.BackColor = System.Drawing.Color.Transparent;
             this.Aula8.Image = ((System.Drawing.Image)(resources.GetObject("Aula8.Image")));
-            this.Aula8.Location = new System.Drawing.Point(440, 168);
+            this.Aula8.Location = new System.Drawing.Point(440, 190);
             this.Aula8.Name = "Aula8";
             this.Aula8.Size = new System.Drawing.Size(67, 67);
             this.Aula8.TabIndex = 46;
@@ -101,7 +101,7 @@
             this.Aula7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula7.BackColor = System.Drawing.Color.Transparent;
             this.Aula7.Image = ((System.Drawing.Image)(resources.GetObject("Aula7.Image")));
-            this.Aula7.Location = new System.Drawing.Point(440, 95);
+            this.Aula7.Location = new System.Drawing.Point(440, 117);
             this.Aula7.Name = "Aula7";
             this.Aula7.Size = new System.Drawing.Size(67, 67);
             this.Aula7.TabIndex = 45;
@@ -114,7 +114,7 @@
             this.Aula6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula6.BackColor = System.Drawing.Color.Transparent;
             this.Aula6.Image = ((System.Drawing.Image)(resources.GetObject("Aula6.Image")));
-            this.Aula6.Location = new System.Drawing.Point(440, 22);
+            this.Aula6.Location = new System.Drawing.Point(440, 44);
             this.Aula6.Name = "Aula6";
             this.Aula6.Size = new System.Drawing.Size(67, 67);
             this.Aula6.TabIndex = 44;
@@ -127,7 +127,7 @@
             this.Aula5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula5.BackColor = System.Drawing.Color.Transparent;
             this.Aula5.Image = ((System.Drawing.Image)(resources.GetObject("Aula5.Image")));
-            this.Aula5.Location = new System.Drawing.Point(336, 314);
+            this.Aula5.Location = new System.Drawing.Point(336, 336);
             this.Aula5.Name = "Aula5";
             this.Aula5.Size = new System.Drawing.Size(67, 67);
             this.Aula5.TabIndex = 43;
@@ -140,7 +140,7 @@
             this.Aula4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula4.BackColor = System.Drawing.Color.Transparent;
             this.Aula4.Image = ((System.Drawing.Image)(resources.GetObject("Aula4.Image")));
-            this.Aula4.Location = new System.Drawing.Point(336, 241);
+            this.Aula4.Location = new System.Drawing.Point(336, 263);
             this.Aula4.Name = "Aula4";
             this.Aula4.Size = new System.Drawing.Size(67, 67);
             this.Aula4.TabIndex = 42;
@@ -153,7 +153,7 @@
             this.Aula3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula3.BackColor = System.Drawing.Color.Transparent;
             this.Aula3.Image = ((System.Drawing.Image)(resources.GetObject("Aula3.Image")));
-            this.Aula3.Location = new System.Drawing.Point(336, 168);
+            this.Aula3.Location = new System.Drawing.Point(336, 190);
             this.Aula3.Name = "Aula3";
             this.Aula3.Size = new System.Drawing.Size(67, 67);
             this.Aula3.TabIndex = 41;
@@ -166,7 +166,7 @@
             this.Aula2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula2.BackColor = System.Drawing.Color.Transparent;
             this.Aula2.Image = ((System.Drawing.Image)(resources.GetObject("Aula2.Image")));
-            this.Aula2.Location = new System.Drawing.Point(336, 95);
+            this.Aula2.Location = new System.Drawing.Point(336, 117);
             this.Aula2.Name = "Aula2";
             this.Aula2.Size = new System.Drawing.Size(67, 67);
             this.Aula2.TabIndex = 40;
@@ -179,7 +179,7 @@
             this.Aula1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aula1.BackColor = System.Drawing.Color.Transparent;
             this.Aula1.Image = ((System.Drawing.Image)(resources.GetObject("Aula1.Image")));
-            this.Aula1.Location = new System.Drawing.Point(336, 22);
+            this.Aula1.Location = new System.Drawing.Point(336, 44);
             this.Aula1.Name = "Aula1";
             this.Aula1.Size = new System.Drawing.Size(67, 67);
             this.Aula1.TabIndex = 39;
@@ -382,6 +382,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -394,12 +395,15 @@
             // 
             // Logout
             // 
-            this.Logout.Location = new System.Drawing.Point(255, 17);
+            this.Logout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Logout.BackColor = System.Drawing.Color.Snow;
+            this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout.Location = new System.Drawing.Point(433, 13);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(75, 23);
             this.Logout.TabIndex = 50;
             this.Logout.Text = "Logout";
-            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.UseVisualStyleBackColor = false;
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // Prenotazione
@@ -409,6 +413,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(534, 411);
             this.Controls.Add(this.Logout);
             this.Controls.Add(this.label1);

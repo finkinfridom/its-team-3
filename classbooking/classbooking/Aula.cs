@@ -75,5 +75,10 @@ namespace classbooking
         {
             label_nomeAula.Text = string.Concat("Aula ", aulaCorrente + 1);
         }
+
+        private void label_nomeAula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
