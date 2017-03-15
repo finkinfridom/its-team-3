@@ -39,8 +39,6 @@ namespace classbooking
             }
         }
         
-
-        
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e){}
 
         private void Aula_Load(object sender, EventArgs e)
@@ -50,7 +48,7 @@ namespace classbooking
 
         private void Logout_Click(object sender, EventArgs e)
         {
-            Close();
+            Hide();
             Login lg = new Login();
             lg.Show();
         }
@@ -74,11 +72,6 @@ namespace classbooking
         void load()
         {
             label_nomeAula.Text = string.Concat("Aula ", aulaCorrente + 1);
-        }
-
-        private void label_nomeAula_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

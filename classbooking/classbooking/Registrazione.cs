@@ -24,7 +24,7 @@ namespace classbooking
 
         private void invia_Click(object sender, EventArgs e)
         {
-            if (Verifiche.verificaEmail(insertEmail.Text) && Verifiche.verificaPassword(insertPassword.Text))
+            if (EmailAddress.isValidEmail(insertEmail.Text) && Password.isValidPassword(insertPassword.Text))
             {
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
@@ -48,20 +48,20 @@ namespace classbooking
                     
                 }
                 conn.Close();
-                Login login = new Login();
+                Prenotazione pren = new Prenotazione(insertEmail.Text);
                 this.Close();
-                login.Show();
+                pren.Show();
 
             }
-            else if(!Verifiche.verificaEmail(insertEmail.Text))
+            else if(!EmailAddress.isValidEmail(insertEmail.Text))
             {
                 insertEmail.BackColor = Color.Red;
                 MessageBox.Show("Inserisci una e-mail valida");
             }
-            else if (!Verifiche.verificaPassword(insertPassword.Text))
+            else if (!Password.isValidPassword(insertPassword.Text))
             {
                 insertPassword.BackColor = Color.Red;
-                MessageBox.Show("Password non valida. Deve contenere almeno una lettera un numero e un simbolo.");
+                MessageBox.Show("Password non valida. Deve contenere almeno 8 caratteri di cui almeno una lettera minuscola, una lettera maiuscola e un numero.");
             }
             insertEmail.BackColor = Color.White;
             insertPassword.BackColor = Color.White;

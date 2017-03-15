@@ -67,15 +67,4 @@ C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\clas
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione.resources
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csproj.GenerateResource.Cache
 C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Aula.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\basedati.mdf
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\basedati_log.ldf
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.exe
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\bin\Debug\classbooking.pdb
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csprojResolveAssemblyReference.cache
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Aula.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Login.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Prenotazione.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Properties.Resources.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione_effettuata.resources
-C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.csproj.GenerateResource.Cache
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione_effettuata.resources

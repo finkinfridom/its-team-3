@@ -90,71 +90,57 @@ namespace classbooking
 
         private void Aula1_Click(object sender, EventArgs e)
         {
-            Hide();
-            Aula aula = new Aula(lAule, 0, mail);
-            aula.Show();
-            //Close();
+            nuovaAula(0);
         }
         private void Aula2_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 1, mail);
-            aula.Show();
+            nuovaAula(1);
         }
         private void Aula3_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 2, mail);
-            aula.Show();
+            nuovaAula(2);
         }
         private void Aula4_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 3, mail);
-            aula.Show();
+            nuovaAula(3);
         }
         private void Aula5_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 4, mail);
-            aula.Show();
+            nuovaAula(4);
         }
         private void Aula6_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 5, mail);
-            aula.Show();
+            nuovaAula(5);
         }
         private void Aula7_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 6, mail);
-            aula.Show();
+            nuovaAula(6);
         }
         private void Aula8_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 7, mail);
-            aula.Show();
+            nuovaAula(7);
         }
         private void Aula9_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 8, mail);
-            aula.Show();
+            nuovaAula(8);
         }
         private void Aula10_Click(object sender, EventArgs e)
         {
-            Close();
-            Aula aula = new Aula(lAule, 9, mail);
-            aula.Show();
+            nuovaAula(9);
         }
 
         private void Logout_Click(object sender, EventArgs e)
         {
-            Close();
+            Hide();
             Login lg = new Login();
             lg.Show();
+        }
+
+        private void nuovaAula(int id)
+        {
+            Hide();
+            Aula aula = new Aula(lAule, id, mail);
+            aula.Show();
         }
     }
 }

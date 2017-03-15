@@ -82,12 +82,14 @@
       <DependentUpon>basedatiDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Crypto.cs" />
+    <Compile Include="EmailAddress.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Password.cs" />
     <Compile Include="Prenotazione.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,7 +111,6 @@
       <DependentUpon>Registrazione_effettuata.cs</DependentUpon>
     </Compile>
     <Compile Include="Ricerca.cs" />
-    <Compile Include="Verifiche.cs" />
     <EmbeddedResource Include="Aula.resx">
       <DependentUpon>Aula.cs</DependentUpon>
     </EmbeddedResource>
