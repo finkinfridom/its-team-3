@@ -18,7 +18,7 @@ namespace classbooking
 
         public void setdate(DateTime d) { date = d; }
 
-        public void cerca()
+        public List<int> cerca()
         {
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
@@ -32,7 +32,7 @@ namespace classbooking
             string queryString = "SELECT * FROM [SelectSoftware]";
             cmd.CommandText = queryString;
 
-            List<int> lP = new List<int>();
+            //List<int> lP = new List<int>();
             List<int> lA = new List<int>();
 
             List<int>[] l = new List<int>[10];
@@ -64,9 +64,15 @@ namespace classbooking
 
                 flag = true;
             }
+            for (int i = 0; i < lA.Count; i++)
+                aule[lA[i]] = true;
 
-            queryString = ""
+            queryString = "";
 
+
+
+            conn.Close();
+            return lA;
 
 
             /*for (int i = 0; i < programmi.Length; i++)
@@ -130,7 +136,7 @@ namespace classbooking
                 }
             }*/
        
-            conn.Close();
+            
         }
     }
 }

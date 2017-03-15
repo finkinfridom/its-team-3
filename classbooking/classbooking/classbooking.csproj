@@ -102,6 +102,12 @@
     <Compile Include="Registrazione.Designer.cs">
       <DependentUpon>Registrazione.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registrazione_effettuata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrazione_effettuata.Designer.cs">
+      <DependentUpon>Registrazione_effettuata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ricerca.cs" />
     <Compile Include="Verifiche.cs" />
     <EmbeddedResource Include="Aula.resx">
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="Registrazione.resx">
       <DependentUpon>Registrazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrazione_effettuata.resx">
+      <DependentUpon>Registrazione_effettuata.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="basedatiDataSet.xsc">
       <DependentUpon>basedatiDataSet.xsd</DependentUpon>

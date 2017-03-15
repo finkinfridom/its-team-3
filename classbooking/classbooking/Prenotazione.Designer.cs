@@ -33,7 +33,7 @@
             this.Aula9 = new System.Windows.Forms.Button();
             this.Aula8 = new System.Windows.Forms.Button();
             this.Aula7 = new System.Windows.Forms.Button();
-            this.Adobe = new System.Windows.Forms.Button();
+            this.Aula6 = new System.Windows.Forms.Button();
             this.Aula5 = new System.Windows.Forms.Button();
             this.Aula4 = new System.Windows.Forms.Button();
             this.Aula3 = new System.Windows.Forms.Button();
@@ -54,6 +54,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.calendario = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
+            this.Logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Aula10
@@ -67,6 +68,7 @@
             this.Aula10.TabIndex = 48;
             this.Aula10.Text = "AULA 10";
             this.Aula10.UseVisualStyleBackColor = false;
+            this.Aula10.Click += new System.EventHandler(this.Aula10_Click);
             // 
             // Aula9
             // 
@@ -79,6 +81,7 @@
             this.Aula9.TabIndex = 47;
             this.Aula9.Text = "AULA 9";
             this.Aula9.UseVisualStyleBackColor = false;
+            this.Aula9.Click += new System.EventHandler(this.Aula9_Click);
             // 
             // Aula8
             // 
@@ -91,6 +94,7 @@
             this.Aula8.TabIndex = 46;
             this.Aula8.Text = "AULA 8";
             this.Aula8.UseVisualStyleBackColor = false;
+            this.Aula8.Click += new System.EventHandler(this.Aula8_Click);
             // 
             // Aula7
             // 
@@ -103,18 +107,20 @@
             this.Aula7.TabIndex = 45;
             this.Aula7.Text = "AULA 7";
             this.Aula7.UseVisualStyleBackColor = false;
+            this.Aula7.Click += new System.EventHandler(this.Aula7_Click);
             // 
-            // Adobe
+            // Aula6
             // 
-            this.Adobe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Adobe.BackColor = System.Drawing.Color.Transparent;
-            this.Adobe.Image = ((System.Drawing.Image)(resources.GetObject("Adobe.Image")));
-            this.Adobe.Location = new System.Drawing.Point(440, 22);
-            this.Adobe.Name = "Adobe";
-            this.Adobe.Size = new System.Drawing.Size(67, 67);
-            this.Adobe.TabIndex = 44;
-            this.Adobe.Text = "AULA 6";
-            this.Adobe.UseVisualStyleBackColor = false;
+            this.Aula6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Aula6.BackColor = System.Drawing.Color.Transparent;
+            this.Aula6.Image = ((System.Drawing.Image)(resources.GetObject("Aula6.Image")));
+            this.Aula6.Location = new System.Drawing.Point(440, 22);
+            this.Aula6.Name = "Aula6";
+            this.Aula6.Size = new System.Drawing.Size(67, 67);
+            this.Aula6.TabIndex = 44;
+            this.Aula6.Text = "AULA 6";
+            this.Aula6.UseVisualStyleBackColor = false;
+            this.Aula6.Click += new System.EventHandler(this.Aula6_Click);
             // 
             // Aula5
             // 
@@ -127,6 +133,7 @@
             this.Aula5.TabIndex = 43;
             this.Aula5.Text = "AULA 5";
             this.Aula5.UseVisualStyleBackColor = false;
+            this.Aula5.Click += new System.EventHandler(this.Aula5_Click);
             // 
             // Aula4
             // 
@@ -139,6 +146,7 @@
             this.Aula4.TabIndex = 42;
             this.Aula4.Text = "AULA 4";
             this.Aula4.UseVisualStyleBackColor = false;
+            this.Aula4.Click += new System.EventHandler(this.Aula4_Click);
             // 
             // Aula3
             // 
@@ -151,6 +159,7 @@
             this.Aula3.TabIndex = 41;
             this.Aula3.Text = "AULA 3";
             this.Aula3.UseVisualStyleBackColor = false;
+            this.Aula3.Click += new System.EventHandler(this.Aula3_Click);
             // 
             // Aula2
             // 
@@ -163,6 +172,7 @@
             this.Aula2.TabIndex = 40;
             this.Aula2.Text = "AULA 2";
             this.Aula2.UseVisualStyleBackColor = false;
+            this.Aula2.Click += new System.EventHandler(this.Aula2_Click);
             // 
             // Aula1
             // 
@@ -175,6 +185,7 @@
             this.Aula1.TabIndex = 39;
             this.Aula1.Text = "AULA 1";
             this.Aula1.UseVisualStyleBackColor = false;
+            this.Aula1.Click += new System.EventHandler(this.Aula1_Click);
             // 
             // Cerca
             // 
@@ -381,6 +392,16 @@
             this.label1.TabIndex = 49;
             this.label1.Text = "label1";
             // 
+            // Logout
+            // 
+            this.Logout.Location = new System.Drawing.Point(255, 17);
+            this.Logout.Name = "Logout";
+            this.Logout.Size = new System.Drawing.Size(75, 23);
+            this.Logout.TabIndex = 50;
+            this.Logout.Text = "Logout";
+            this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
             // Prenotazione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,12 +410,13 @@
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(534, 411);
+            this.Controls.Add(this.Logout);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Aula10);
             this.Controls.Add(this.Aula9);
             this.Controls.Add(this.Aula8);
             this.Controls.Add(this.Aula7);
-            this.Controls.Add(this.Adobe);
+            this.Controls.Add(this.Aula6);
             this.Controls.Add(this.Aula5);
             this.Controls.Add(this.Aula4);
             this.Controls.Add(this.Aula3);
@@ -430,7 +452,7 @@
         private System.Windows.Forms.Button Aula9;
         private System.Windows.Forms.Button Aula8;
         private System.Windows.Forms.Button Aula7;
-        private System.Windows.Forms.Button Adobe;
+        private System.Windows.Forms.Button Aula6;
         private System.Windows.Forms.Button Aula5;
         private System.Windows.Forms.Button Aula4;
         private System.Windows.Forms.Button Aula3;
@@ -451,5 +473,6 @@
         private System.Windows.Forms.MonthCalendar calendario;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Logout;
     }
 }

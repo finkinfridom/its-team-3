@@ -13,6 +13,7 @@ namespace classbooking
     public partial class Prenotazione : Form
     {
         Ricerca ric = new Ricerca();
+        List<int> lAule = new List<int>();
         private string mail;
 
         public Prenotazione(string mail)
@@ -43,8 +44,39 @@ namespace classbooking
             ric.programmi[10] = checkBox11.Checked;
             ric.programmi[11] = checkBox12.Checked;
 
-            ric.cerca();
-            
+            lAule = ric.cerca();
+
+            if (!ric.aule[0])
+                Aula1.Hide();
+            else Aula1.Show();
+            if (!ric.aule[1])
+                Aula2.Hide();
+            else Aula2.Show();
+            if (!ric.aule[2])
+                Aula3.Hide();
+            else Aula3.Show();
+            if (!ric.aule[3])
+                Aula4.Hide();
+            else Aula4.Show();
+            if (!ric.aule[4])
+                Aula5.Hide();
+            else Aula5.Show();
+            if (!ric.aule[5])
+                Aula6.Hide();
+            else Aula6.Show();
+            if (!ric.aule[6])
+                Aula7.Hide();
+            else Aula7.Show();
+            if (!ric.aule[7])
+                Aula8.Hide();
+            else Aula8.Show();
+            if (!ric.aule[8])
+                Aula9.Hide();
+            else Aula9.Show();
+            if (!ric.aule[9])
+                Aula10.Hide();
+            else Aula10.Show();
+
         }
 
         private void Prenotazione_Load(object sender, EventArgs e)
@@ -55,5 +87,74 @@ namespace classbooking
         private void checkBox7_CheckedChanged(object sender, EventArgs e) { }
         private void checkBox1_CheckedChanged(object sender, EventArgs e) { }
         private void checkBox10_CheckedChanged(object sender, EventArgs e) { }
+
+        private void Aula1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Aula aula = new Aula(lAule, 0, mail);
+            aula.Show();
+            //Close();
+        }
+        private void Aula2_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 1, mail);
+            aula.Show();
+        }
+        private void Aula3_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 2, mail);
+            aula.Show();
+        }
+        private void Aula4_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 3, mail);
+            aula.Show();
+        }
+        private void Aula5_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 4, mail);
+            aula.Show();
+        }
+        private void Aula6_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 5, mail);
+            aula.Show();
+        }
+        private void Aula7_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 6, mail);
+            aula.Show();
+        }
+        private void Aula8_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 7, mail);
+            aula.Show();
+        }
+        private void Aula9_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 8, mail);
+            aula.Show();
+        }
+        private void Aula10_Click(object sender, EventArgs e)
+        {
+            Close();
+            Aula aula = new Aula(lAule, 9, mail);
+            aula.Show();
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            Close();
+            Login lg = new Login();
+            lg.Show();
+        }
     }
 }

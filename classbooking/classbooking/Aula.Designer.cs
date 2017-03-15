@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_nomeAula = new System.Windows.Forms.Label();
             this.Indietro = new System.Windows.Forms.Button();
             this.Avanti = new System.Windows.Forms.Button();
             this.Logout = new System.Windows.Forms.Button();
@@ -54,14 +54,14 @@
             this.checkedListBox1.TabIndex = 2;
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
-            // label1
+            // label_nomeAula
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(196, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label_nomeAula.AutoSize = true;
+            this.label_nomeAula.Location = new System.Drawing.Point(196, 23);
+            this.label_nomeAula.Name = "label_nomeAula";
+            this.label_nomeAula.Size = new System.Drawing.Size(79, 13);
+            this.label_nomeAula.TabIndex = 3;
+            this.label_nomeAula.Text = "label nomeAula";
             // 
             // Indietro
             // 
@@ -71,15 +71,17 @@
             this.Indietro.TabIndex = 4;
             this.Indietro.Text = "Indietro";
             this.Indietro.UseVisualStyleBackColor = true;
+            this.Indietro.Click += new System.EventHandler(this.Indietro_Click);
             // 
             // Avanti
             // 
-            this.Avanti.Location = new System.Drawing.Point(265, 18);
+            this.Avanti.Location = new System.Drawing.Point(281, 17);
             this.Avanti.Name = "Avanti";
             this.Avanti.Size = new System.Drawing.Size(75, 23);
             this.Avanti.TabIndex = 5;
             this.Avanti.Text = "Avanti";
             this.Avanti.UseVisualStyleBackColor = true;
+            this.Avanti.Click += new System.EventHandler(this.Avanti_Click);
             // 
             // Logout
             // 
@@ -89,6 +91,7 @@
             this.Logout.TabIndex = 6;
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // CercaOrario
             // 
@@ -109,10 +112,11 @@
             this.Controls.Add(this.Logout);
             this.Controls.Add(this.Avanti);
             this.Controls.Add(this.Indietro);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_nomeAula);
             this.Controls.Add(this.checkedListBox1);
             this.Name = "Aula";
             this.Text = "Aula";
+            this.Load += new System.EventHandler(this.Aula_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,7 +124,7 @@
 
         #endregion
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_nomeAula;
         private System.Windows.Forms.Button Indietro;
         private System.Windows.Forms.Button Avanti;
         private System.Windows.Forms.Button Logout;
