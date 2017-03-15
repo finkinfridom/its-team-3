@@ -35,9 +35,6 @@ namespace classbooking
                 MailMessage message = new MailMessage();
                 SmtpClient smtp = new SmtpClient();
 
-
-
-
                 message.From = new MailAddress("prenotaule@virgilio.it");
                 message.To.Add(new MailAddress(textemail.Text));
                 message.Subject = "Conferma Prenotazione Aula";
@@ -50,7 +47,6 @@ namespace classbooking
                 smtp.Credentials = new NetworkCredential("prenotaule@virgilio.it", "prenotaaule");
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
 
-
                 smtp.Send(message);
 
             }
@@ -58,8 +54,6 @@ namespace classbooking
             {
                 MessageBox.Show("err: " + ex.Message);
             }
-
-
 
         }
     }

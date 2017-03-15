@@ -18,7 +18,7 @@ namespace classbooking
         {
             if (password.Length < 8)
                 return false;
-            
+
             Regex validPasswordRegex = createValidPasswordRegex();
             bool isvalid = validPasswordRegex.IsMatch(password);
             return isvalid;
