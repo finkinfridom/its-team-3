@@ -56,7 +56,10 @@ namespace classbooking
                 for (int j = 0; j < programmi.Length; j++)
                 {
                     if (programmi[j] && !l[i].Contains(j))
+                    {
                         flag = false;
+                        break;
+                    }  
                 }
 
                 if(flag)
@@ -64,8 +67,22 @@ namespace classbooking
 
                 flag = true;
             }
-            for (int i = 0; i < lA.Count; i++)
-                aule[lA[i]] = true;
+            for (int i = 0, j = 0; i < aule.Length; i++)
+            {
+                if(j<lA.Count)
+                {
+                    if (lA[j] == i && j < lA.Count)
+                    {
+                        aule[i] = true;
+                        j++;
+                    }
+                    else
+                        aule[i] = false;
+                }
+                else { aule[i] = false; }
+                
+            }
+                
 
             queryString = "";
 

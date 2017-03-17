@@ -18,9 +18,9 @@ namespace classbooking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login(/*email,password*/));
+            //Application.Run(new Login(/*email,password*/));
             //Application.Run(new Aula());
-            //Application.Run(new Prenotazione("test"));
+            Application.Run(new Prenotazione("test"));
         }
     }
 }

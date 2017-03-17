@@ -44,6 +44,7 @@ namespace classbooking
             ric.programmi[10] = checkBox11.Checked;
             ric.programmi[11] = checkBox12.Checked;
 
+            lAule.Clear();
             lAule = ric.cerca();
 
             if (!ric.aule[0])
@@ -76,7 +77,6 @@ namespace classbooking
             if (!ric.aule[9])
                 Aula10.Hide();
             else Aula10.Show();
-
         }
 
         private void Prenotazione_Load(object sender, EventArgs e)

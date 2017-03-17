@@ -82,3 +82,4 @@ C:\Users\francescotalomo\Source\Repos\its-team-3\classbooking\classbooking\obj\D
 C:\Users\Utente\Desktop\classbooking\classbooking\bin\Debug\classbooking.exe.config
 C:\Users\Utente\Desktop\classbooking\classbooking\obj\Debug\classbooking.exe
 C:\Users\Utente\Desktop\classbooking\classbooking\obj\Debug\classbooking.pdb
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione_effettuata.resources
