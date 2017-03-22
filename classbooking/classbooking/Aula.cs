@@ -13,7 +13,7 @@ namespace classbooking
     public partial class Aula : Form
     {
         bool[] orari = new Boolean[8];
-        int aulaCorrente;
+        int iaulaCorrente;
         List<int> aule;
         string email;
 
@@ -24,7 +24,7 @@ namespace classbooking
         public Aula(List<int> auleTrovate, int id, string email)
         {
             InitializeComponent();
-            aulaCorrente = id;
+            iaulaCorrente = id;
             aule = auleTrovate;
             this.email = email;
         }
@@ -46,6 +46,7 @@ namespace classbooking
         private void Aula_Load(object sender, EventArgs e)
         {
             load();
+            label_email.Text = email;
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -57,23 +58,24 @@ namespace classbooking
 
         private void Avanti_Click(object sender, EventArgs e)
         {
-            if (aulaCorrente == 9)
-                aulaCorrente = 0;
-            else aulaCorrente++;
+            
+            if (iaulaCorrente == aule.Count-1)
+                iaulaCorrente = 0;
+            else iaulaCorrente++;
             load();
         }
 
         private void Indietro_Click(object sender, EventArgs e)
         {
-            if (aulaCorrente == 0)
-                aulaCorrente = 9;
-            else aulaCorrente--;
+            if (iaulaCorrente == 0)
+                iaulaCorrente = 9;
+            else iaulaCorrente--;
             load();
         }
 
         void load()
         {
-            label_nomeAula.Text = string.Concat("Aula ", aulaCorrente + 1);
+            label_nomeAula.Text = string.Concat("Aula ", aule[iaulaCorrente]+1);
         }
 
         private void label_nomeAula_Click(object sender, EventArgs e)

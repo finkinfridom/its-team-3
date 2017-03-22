@@ -63,6 +63,10 @@ namespace classbooking
                             if (dr.HasRows)
                             {
                                 MessageBox.Show("E-mail già registrata", "ERROR", MessageBoxButtons.OK);
+                                insertEmail.Clear();
+                                insertPassword.Clear();
+                                ConfermaPassword.Clear();
+                                return;
                             }
                         }
                     }

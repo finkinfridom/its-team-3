@@ -112,3 +112,4 @@ C:\Users\Utente\Desktop\its-team-3-master\classbooking\obj\Debug\classbooking.Pr
 C:\Users\Utente\Desktop\its-team-3-master\classbooking\obj\Debug\classbooking.Registrazione.resources
 C:\Users\Utente\Desktop\its-team-3-master\classbooking\obj\Debug\classbooking.Registrazione_effettuata.resources
 C:\Users\Utente\Desktop\its-team-3-master\classbooking\obj\Debug\classbooking.csproj.GenerateResource.Cache
+C:\Users\Utente\Source\Repos\its-team-3\classbooking\classbooking\obj\Debug\classbooking.Registrazione_effettuata.resources

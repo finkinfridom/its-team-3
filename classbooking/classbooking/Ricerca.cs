@@ -20,13 +20,94 @@ namespace classbooking
 
         public List<int> cerca()
         {
-            SqlConnection conn = new SqlConnection();
+            List<int> lA = new List<int>();
+            string elencoProgr = "";
+            bool flag = true;
+            int n = 0;
+
+            for(int i=0; i<programmi.Length; i++)
+            {
+                if(programmi[i])
+                {
+                    if (flag)
+                    {
+                        elencoProgr = string.Concat(elencoProgr, "('", i, "'");
+                        flag = false;
+                    }
+                    else
+                        elencoProgr = string.Concat(elencoProgr, ",'", i, "'");
+                    n++;
+                }
+            }
+            if (n != 0)
+            {
+                elencoProgr = string.Concat(elencoProgr, ")");
+
+
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
+                    conn.Open();
+                    //string querystringParameters = "select IDA from [SelectSoftware] where IDS in @elProgrammi group by IDA having count(IDA)=@numProgrammi";
+                    string querystring = string.Format("select IDA from [SelectSoftware] where IDS in {0} group by IDA having count(IDA)={1}", elencoProgr, n);
+                    using (SqlCommand cmd = new SqlCommand(querystring, conn))
+                    {
+                        //cmd.Parameters.Add(new SqlParameter("@elProgrammi", elencoProgr));
+                        //cmd.Parameters.Add(new SqlParameter("@numProgrammi", n));
+                        /*cmd.Parameters.Add("@elProgrammi", SqlDbType.Int);
+                        cmd.Parameters["@elProgrammi"].Value = 6;
+                        cmd.Parameters.Add("@numProgrammi", SqlDbType.Int);
+                        cmd.Parameters["@numProgrammi"].Value = n;*/
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+                                    lA.Add(reader.GetInt32(0) - 1);
+                                }
+                            }
+                        }
+                    }
+                    conn.Close();
+                }
+
+                for (int i = 0, j = 0; i < aule.Length; i++)
+                {
+                    if (j < lA.Count)
+                    {
+                        if (lA[j] == i && j < lA.Count)
+                        {
+                            aule[i] = true;
+                            j++;
+                        }
+                        else
+                            aule[i] = false;
+                    }
+                    else { aule[i] = false; }
+
+                }
+            }
+            else
+                for (int i = 0; i < 10; i++)
+                {
+                    aule[i] = true;
+                    lA.Add(i);
+                }
+                    
+            
+
+            return lA;
+
+
+            /*SqlConnection conn = new SqlConnection();
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             SqlDataReader reader;
             conn.Open();
-
+            
             bool flag = true;
             //string queryStringSingolaAulaProgrammi = "SELECT IDA FROM [SelectSoftware] WHERE IDS = ";
             string queryString = "SELECT * FROM [SelectSoftware]";
@@ -89,7 +170,7 @@ namespace classbooking
 
             conn.Close();
             return lA;
-
+            */
 
             /*for (int i = 0; i < programmi.Length; i++)
             {

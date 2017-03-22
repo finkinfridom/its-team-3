@@ -65,6 +65,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
+            this.label_email = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -483,6 +484,15 @@
             this.button30.Text = "button30";
             this.button30.UseVisualStyleBackColor = false;
             // 
+            // label_email
+            // 
+            this.label_email.AutoSize = true;
+            this.label_email.Location = new System.Drawing.Point(64, 63);
+            this.label_email.Name = "label_email";
+            this.label_email.Size = new System.Drawing.Size(59, 13);
+            this.label_email.TabIndex = 38;
+            this.label_email.Text = "label_email";
+            // 
             // Aula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,6 +500,7 @@
             this.BackColor = System.Drawing.Color.Snow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(534, 411);
+            this.Controls.Add(this.label_email);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button29);
             this.Controls.Add(this.button28);
@@ -571,5 +582,6 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Label label_email;
     }
 }
