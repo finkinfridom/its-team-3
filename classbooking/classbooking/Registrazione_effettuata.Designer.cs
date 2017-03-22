@@ -80,6 +80,7 @@
             this.Name = "Registrazione_effettuata";
             this.Text = "Registrazione_effettuata";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Registrazione_effettuata_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

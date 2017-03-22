@@ -40,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ConfermaPassword = new System.Windows.Forms.TextBox();
+            this.Conferma = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // esci
@@ -47,7 +49,7 @@
             this.esci.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.esci.BackColor = System.Drawing.Color.Snow;
             this.esci.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.esci.Location = new System.Drawing.Point(335, 219);
+            this.esci.Location = new System.Drawing.Point(305, 236);
             this.esci.Name = "esci";
             this.esci.Size = new System.Drawing.Size(115, 42);
             this.esci.TabIndex = 6;
@@ -60,7 +62,7 @@
             this.invia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.invia.BackColor = System.Drawing.Color.Snow;
             this.invia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invia.Location = new System.Drawing.Point(196, 219);
+            this.invia.Location = new System.Drawing.Point(138, 236);
             this.invia.Name = "invia";
             this.invia.Size = new System.Drawing.Size(115, 42);
             this.invia.TabIndex = 5;
@@ -160,11 +162,33 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(226, 9);
+            this.label1.Location = new System.Drawing.Point(190, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 31);
             this.label1.TabIndex = 12;
             this.label1.Text = "Registrazione";
+            // 
+            // ConfermaPassword
+            // 
+            this.ConfermaPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ConfermaPassword.Location = new System.Drawing.Point(196, 199);
+            this.ConfermaPassword.Name = "ConfermaPassword";
+            this.ConfermaPassword.Size = new System.Drawing.Size(254, 20);
+            this.ConfermaPassword.TabIndex = 5;
+            // 
+            // Conferma
+            // 
+            this.Conferma.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Conferma.AutoSize = true;
+            this.Conferma.BackColor = System.Drawing.Color.Transparent;
+            this.Conferma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Conferma.ForeColor = System.Drawing.Color.Snow;
+            this.Conferma.Location = new System.Drawing.Point(16, 199);
+            this.Conferma.Name = "Conferma";
+            this.Conferma.Size = new System.Drawing.Size(174, 20);
+            this.Conferma.TabIndex = 18;
+            this.Conferma.Text = "Conferma Password:";
+            this.Conferma.Click += new System.EventHandler(this.label6_Click);
             // 
             // Registrazione
             // 
@@ -175,6 +199,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 327);
+            this.Controls.Add(this.ConfermaPassword);
+            this.Controls.Add(this.Conferma);
             this.Controls.Add(this.esci);
             this.Controls.Add(this.invia);
             this.Controls.Add(this.insertCognome);
@@ -208,5 +234,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ConfermaPassword;
+        private System.Windows.Forms.Label Conferma;
     }
 }

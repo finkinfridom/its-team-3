@@ -56,5 +56,10 @@ namespace classbooking
             }
 
         }
+
+        private void Registrazione_effettuata_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

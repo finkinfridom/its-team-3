@@ -36,7 +36,7 @@ namespace classbooking
             List<int> lA = new List<int>();
 
             List<int>[] l = new List<int>[10];
-            for(int i=0; i<l.Length; i++)
+            for (int i = 0; i < l.Length; i++)
             {
                 l[i] = new List<int>();
             }
@@ -46,7 +46,7 @@ namespace classbooking
             {
                 while (reader.Read())
                 {
-                    int a = reader.GetInt32(0)-1;
+                    int a = reader.GetInt32(0) - 1;
                     int b = reader.GetInt32(1);
                     l[a].Add(b);
                 }
@@ -59,17 +59,17 @@ namespace classbooking
                     {
                         flag = false;
                         break;
-                    }  
+                    }
                 }
 
-                if(flag)
+                if (flag)
                     lA.Add(i);
 
                 flag = true;
             }
             for (int i = 0, j = 0; i < aule.Length; i++)
             {
-                if(j<lA.Count)
+                if (j < lA.Count)
                 {
                     if (lA[j] == i && j < lA.Count)
                     {
@@ -80,9 +80,8 @@ namespace classbooking
                         aule[i] = false;
                 }
                 else { aule[i] = false; }
-                
+
             }
-                
 
             queryString = "";
 
